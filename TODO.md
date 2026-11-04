@@ -1,0 +1,9 @@
+# Entregas do site JML Serviços Elétricos
+
+- [x] **Página inicial responsiva com identidade visual da JML** — apresentar a JML Serviços Elétricos com a logo fornecida pelo usuário, proposta de valor clara e experiência adaptada a celulares, tablets e computadores.
+- [x] **Serviços de parte elétrica** — comunicar instalação e manutenção elétrica; instalação e troca de tomadas e interruptores; instalação de luminárias, plafons e spots; instalação de chuveiros elétricos; montagem e organização de quadros elétricos; instalação e substituição de disjuntores; identificação de falhas e curtos-circuitos; instalação de circuitos dedicados; adequação de instalações existentes; e instalação de ventiladores de teto.
+- [x] **Serviços de automação** — comunicar instalação de interruptores inteligentes; automação de iluminação; configuração de tomadas inteligentes; sensores de presença; automação de ventiladores e equipamentos compatíveis; comandos por aplicativo; integração com assistentes de voz quando compatível; programação de horários; e modernização de instalações.
+- [x] **Serviços de manutenção** — comunicar diagnóstico para disjuntores desarmando, tomadas sem energia, lâmpadas piscando, aquecimento de tomadas e conexões, sobrecargas, inspeção visual, testes elétricos e manutenção preventiva e corretiva.
+- [x] **Conversão e atendimento** — incluir chamadas para solicitar orçamento e iniciar atendimento pelo WhatsApp, com dados reais mantidos como placeholders configuráveis quando ainda não fornecidos.
+- [x] **Confiança e processo** — destacar atendimento profissional, segurança, organização, modernização e soluções adequadas às necessidades do cliente; explicar o processo desde o contato até a execução sem criar avaliações, certificações, endereço ou números não fornecidos.
+- [x] **Rodapé e canais configuráveis** — incluir canais de contato configuráveis, link de WhatsApp e indicação clara de onde substituir placeholders pelos dados reais.
