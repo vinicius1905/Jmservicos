@@ -4,8 +4,8 @@ const logo = '/logo-jml.png';
 
 // Substitua somente este objeto pelos dados reais antes da publicação.
 const CONTACT_CONFIG = {
-  whatsapp: '',
-  phone: '',
+  whatsapp: '+55 11 94420-1533',
+  phone: '+55 11 94420-1533',
   email: '',
   serviceArea: 'Atendimento residencial — região a confirmar'
 };
@@ -134,7 +134,7 @@ function app() {
 
         <section class="cta-section"><div class="cta-pattern"></div><div class="section-wrap cta-inner reveal"><div><p class="eyebrow eyebrow--dark">Vamos colocar isso em ordem?</p><h2>Seu próximo passo<br /><em>começa aqui.</em></h2></div><a class="button button--dark" href="#contato">Solicitar orçamento ${icons.arrow}</a></div></section>
 
-        <section class="section contact-section" id="contato"><div class="section-wrap contact-layout"><div class="contact-copy reveal"><p class="eyebrow">Fale com a JML</p><h2>Descreva o que você<br /><span>precisa resolver.</span></h2><p>Envie uma mensagem para conversar sobre o seu caso e entender o melhor caminho para o seu ambiente.</p><a class="contact-whatsapp" href="${contactLink()}">${icons.whatsapp}<span><small>WhatsApp</small><strong>${CONTACT_CONFIG.whatsapp ? CONTACT_CONFIG.whatsapp : 'Configure seu número'}</strong></span><span class="contact-whatsapp__arrow">↗</span></a></div><div class="contact-details reveal"><div class="detail-row"><span class="detail-label">Atendimento</span><strong>${contactValue(CONTACT_CONFIG.serviceArea, 'Configure a região de atendimento')}</strong></div><div class="detail-row"><span class="detail-label">Telefone</span><strong>${contactValue(CONTACT_CONFIG.phone, 'Configure seu telefone')}</strong></div><div class="detail-row"><span class="detail-label">E-mail</span><strong>${contactValue(CONTACT_CONFIG.email, 'Configure seu e-mail')}</strong></div><div class="config-note">Os campos acima são editáveis no arquivo <code>src/main.js</code>. Substitua os placeholders pelos dados reais antes de publicar.</div></div></div></section>
+        <section class="section contact-section" id="contato"><div class="section-wrap contact-layout"><div class="contact-copy reveal"><p class="eyebrow">Fale com a JML</p><h2>Descreva o que você<br /><span>precisa resolver.</span></h2><p>Envie uma mensagem para conversar sobre o seu caso e entender o melhor caminho para o seu ambiente.</p><a class="contact-whatsapp" href="${contactLink()}">${icons.whatsapp}<span><small>WhatsApp</small><strong>${CONTACT_CONFIG.whatsapp ? CONTACT_CONFIG.whatsapp : 'Configure seu número'}</strong></span><span class="contact-whatsapp__arrow">↗</span></a></div><div class="contact-details reveal"><div class="detail-row"><span class="detail-label">Atendimento</span><strong>${contactValue(CONTACT_CONFIG.serviceArea, 'Configure a região de atendimento')}</strong></div><div class="detail-row"><span class="detail-label">Telefone</span><strong>${contactValue(CONTACT_CONFIG.phone, 'Configure seu telefone')}</strong></div>${CONTACT_CONFIG.email ? `<div class="detail-row"><span class="detail-label">E-mail</span><strong>${CONTACT_CONFIG.email}</strong></div>` : ''}<div class="config-note">Os campos acima são editáveis no arquivo <code>src/main.js</code>. Substitua os placeholders pelos dados reais antes de publicar.</div></div></div></section>
       </main>
       <footer class="site-footer"><div class="section-wrap footer-inner"><a class="brand brand--footer" href="#inicio"><img src="${logo}" alt="JML Serviços Elétricos" /></a><p>Energia que funciona.<br />Tecnologia que acompanha.</p><div class="footer-meta"><span>© ${new Date().getFullYear()} JML Serviços Elétricos</span><a href="#inicio">Voltar ao topo ↑</a></div></div></footer>
     </div>
