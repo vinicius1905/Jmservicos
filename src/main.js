@@ -1,6 +1,6 @@
 import './styles.css';
 
-const logo = '/logo-jml.png';
+const logo = import.meta.env.PROD ? `${import.meta.env.BASE_URL}logo-jml.png` : '/logo-jml.png';
 
 // Substitua somente este objeto pelos dados reais antes da publicação.
 const CONTACT_CONFIG = {
