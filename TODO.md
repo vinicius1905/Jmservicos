@@ -1,6 +1,6 @@
-# Entregas do site JML Serviços Elétricos
+# Entregas do site JM Serviços Elétricos
 
-- [x] **Página inicial responsiva com identidade visual da JML** — apresentar a JML Serviços Elétricos com a logo fornecida pelo usuário, proposta de valor clara e experiência adaptada a celulares, tablets e computadores.
+- [x] **Página inicial responsiva com identidade visual da JM** — apresentar a JM Serviços Elétricos com a logo fornecida pelo usuário, proposta de valor clara e experiência adaptada a celulares, tablets e computadores.
 - [x] **Serviços de parte elétrica** — comunicar instalação e manutenção elétrica; instalação e troca de tomadas e interruptores; instalação de luminárias, plafons e spots; instalação de chuveiros elétricos; montagem e organização de quadros elétricos; instalação e substituição de disjuntores; identificação de falhas e curtos-circuitos; instalação de circuitos dedicados; adequação de instalações existentes; e instalação de ventiladores de teto.
 - [x] **Serviços de automação** — comunicar instalação de interruptores inteligentes; automação de iluminação; configuração de tomadas inteligentes; sensores de presença; automação de ventiladores e equipamentos compatíveis; comandos por aplicativo; integração com assistentes de voz quando compatível; programação de horários; e modernização de instalações.
 - [x] **Serviços de manutenção** — comunicar diagnóstico para disjuntores desarmando, tomadas sem energia, lâmpadas piscando, aquecimento de tomadas e conexões, sobrecargas, inspeção visual, testes elétricos e manutenção preventiva e corretiva.

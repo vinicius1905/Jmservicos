@@ -42,7 +42,7 @@ const services = [
     number: '03',
     icon: icons.shield,
     label: 'Manutenção',
-    title: 'O problema aparece. A JML resolve.',
+    title: 'O problema aparece. A JM resolve.',
     description: 'Inspeção visual, testes elétricos e manutenção preventiva ou corretiva para devolver tranquilidade à sua rotina.',
     items: ['Disjuntores desarmando', 'Tomadas sem energia e lâmpadas piscando', 'Aquecimento de tomadas e conexões', 'Identificação de sobrecargas', 'Manutenção preventiva e corretiva']
   }
@@ -69,7 +69,7 @@ function serviceCard(service) {
 function contactLink() {
   const raw = CONTACT_CONFIG.whatsapp.replace(/\D/g, '');
   if (raw.length >= 10) {
-    const message = encodeURIComponent('Olá, JML! Gostaria de solicitar um orçamento.');
+    const message = encodeURIComponent('Olá, JM! Gostaria de solicitar um orçamento.');
     return `https://wa.me/${raw}?text=${message}`;
   }
   return '#contato';
@@ -84,14 +84,14 @@ function app() {
     <div class="site-shell">
       <div class="announcement"><span class="pulse"></span><span>Elétrica residencial &nbsp;·&nbsp; Automação &nbsp;·&nbsp; Manutenção</span><a href="#contato">Solicite seu orçamento <span>↗</span></a></div>
       <header class="site-header">
-        <a class="brand" href="#inicio" aria-label="JML Serviços Elétricos — início"><img src="${logo}" alt="JML Serviços Elétricos" /></a>
+        <a class="brand" href="#inicio" aria-label="JM Serviços Elétricos — início"><img src="${logo}" alt="JM Serviços Elétricos" /></a>
         <nav class="desktop-nav" aria-label="Navegação principal">
           <a href="#servicos">Serviços</a><a href="#diferenciais">Diferenciais</a><a href="#processo">Como funciona</a>
         </nav>
-        <a class="header-cta" href="${contactLink()}">Falar com a JML <span>↗</span></a>
+        <a class="header-cta" href="${contactLink()}">Falar com a JM <span>↗</span></a>
         <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">${icons.menu}</button>
       </header>
-      <div class="mobile-menu" aria-hidden="true"><a href="#servicos">Serviços</a><a href="#diferenciais">Diferenciais</a><a href="#processo">Como funciona</a><a class="mobile-menu__cta" href="${contactLink()}">Falar com a JML ↗</a></div>
+      <div class="mobile-menu" aria-hidden="true"><a href="#servicos">Serviços</a><a href="#diferenciais">Diferenciais</a><a href="#processo">Como funciona</a><a class="mobile-menu__cta" href="${contactLink()}">Falar com a JM ↗</a></div>
 
       <main>
         <section class="hero" id="inicio">
@@ -105,9 +105,9 @@ function app() {
           </div>
           <div class="hero__visual reveal">
             <div class="visual-halo"></div>
-            <div class="visual-card visual-card--main"><img src="${logo}" alt="Logo JML Serviços Elétricos" /><span class="visual-card__caption">MANUTENÇÃO ELÉTRICA RESIDENCIAL</span></div>
+            <div class="visual-card visual-card--main"><img src="${logo}" alt="Logo JM Serviços Elétricos" /><span class="visual-card__caption">MANUTENÇÃO ELÉTRICA RESIDENCIAL</span></div>
             <div class="visual-tag visual-tag--top"><span class="tag-dot"></span> Segurança primeiro</div>
-            <div class="visual-tag visual-tag--bottom">JML <span>／</span> 01</div>
+            <div class="visual-tag visual-tag--bottom">JM <span>／</span> 01</div>
             <div class="visual-cross visual-cross--one">＋</div><div class="visual-cross visual-cross--two">＋</div>
           </div>
         </section>
@@ -116,14 +116,14 @@ function app() {
 
         <section class="section services-section" id="servicos">
           <div class="section-wrap">
-            <div class="section-heading reveal"><div><p class="eyebrow">O que fazemos</p><h2>Serviço bem feito começa<br /><span>por entender o problema.</span></h2></div><p class="section-heading__side">Da troca de uma tomada à modernização completa da instalação, a JML cuida da parte elétrica da sua casa com método e atenção.</p></div>
+            <div class="section-heading reveal"><div><p class="eyebrow">O que fazemos</p><h2>Serviço bem feito começa<br /><span>por entender o problema.</span></h2></div><p class="section-heading__side">Da troca de uma tomada à modernização completa da instalação, a JM cuida da parte elétrica da sua casa com método e atenção.</p></div>
             <div class="services-grid">${services.map(serviceCard).join('')}</div>
           </div>
         </section>
 
         <section class="section difference-section" id="diferenciais">
           <div class="section-wrap difference-layout">
-            <div class="difference-statement reveal"><p class="eyebrow eyebrow--yellow">Por que JML?</p><h2>Menos susto.<br /><span>Mais confiança.</span></h2><p>A elétrica da sua casa não precisa ser um mistério. A gente explica o que está acontecendo, organiza o que precisa ser feito e entrega uma solução que faz sentido para a sua rotina.</p><a class="button button--yellow" href="#contato">Conversar sobre meu caso ${icons.arrow}</a></div>
+            <div class="difference-statement reveal"><p class="eyebrow eyebrow--yellow">Por que JM?</p><h2>Menos susto.<br /><span>Mais confiança.</span></h2><p>A elétrica da sua casa não precisa ser um mistério. A gente explica o que está acontecendo, organiza o que precisa ser feito e entrega uma solução que faz sentido para a sua rotina.</p><a class="button button--yellow" href="#contato">Conversar sobre meu caso ${icons.arrow}</a></div>
             <div class="principles reveal"><div class="principle"><span class="principle__index">01</span><div><h3>Diagnóstico claro</h3><p>Você entende o problema antes de decidir o próximo passo.</p></div></div><div class="principle"><span class="principle__index">02</span><div><h3>Execução organizada</h3><p>Mais cuidado com o ambiente e menos interferência na sua rotina.</p></div></div><div class="principle"><span class="principle__index">03</span><div><h3>Modernização possível</h3><p>Automação aplicada com simplicidade, quando fizer sentido para você.</p></div></div><div class="principle"><span class="principle__index">04</span><div><h3>Segurança em primeiro lugar</h3><p>Decisões técnicas voltadas para uma instalação mais confiável.</p></div></div></div>
           </div>
         </section>
@@ -134,9 +134,9 @@ function app() {
 
         <section class="cta-section"><div class="cta-pattern"></div><div class="section-wrap cta-inner reveal"><div><p class="eyebrow eyebrow--dark">Vamos colocar isso em ordem?</p><h2>Seu próximo passo<br /><em>começa aqui.</em></h2></div><a class="button button--dark" href="#contato">Solicitar orçamento ${icons.arrow}</a></div></section>
 
-        <section class="section contact-section" id="contato"><div class="section-wrap contact-layout"><div class="contact-copy reveal"><p class="eyebrow">Fale com a JML</p><h2>Descreva o que você<br /><span>precisa resolver.</span></h2><p>Envie uma mensagem para conversar sobre o seu caso e entender o melhor caminho para o seu ambiente.</p><a class="contact-whatsapp" href="${contactLink()}">${icons.whatsapp}<span><small>WhatsApp</small><strong>${CONTACT_CONFIG.whatsapp ? CONTACT_CONFIG.whatsapp : 'Configure seu número'}</strong></span><span class="contact-whatsapp__arrow">↗</span></a></div><div class="contact-details reveal"><div class="detail-row"><span class="detail-label">Atendimento</span><strong>${contactValue(CONTACT_CONFIG.serviceArea, 'Configure a região de atendimento')}</strong></div><div class="detail-row"><span class="detail-label">Telefone</span><strong>${contactValue(CONTACT_CONFIG.phone, 'Configure seu telefone')}</strong></div>${CONTACT_CONFIG.email ? `<div class="detail-row"><span class="detail-label">E-mail</span><strong>${CONTACT_CONFIG.email}</strong></div>` : ''}<div class="config-note">Os campos acima são editáveis no arquivo <code>src/main.js</code>. Substitua os placeholders pelos dados reais antes de publicar.</div></div></div></section>
+        <section class="section contact-section" id="contato"><div class="section-wrap contact-layout"><div class="contact-copy reveal"><p class="eyebrow">Fale com a JM</p><h2>Descreva o que você<br /><span>precisa resolver.</span></h2><p>Envie uma mensagem para conversar sobre o seu caso e entender o melhor caminho para o seu ambiente.</p><a class="contact-whatsapp" href="${contactLink()}">${icons.whatsapp}<span><small>WhatsApp</small><strong>${CONTACT_CONFIG.whatsapp ? CONTACT_CONFIG.whatsapp : 'Configure seu número'}</strong></span><span class="contact-whatsapp__arrow">↗</span></a></div><div class="contact-details reveal"><div class="detail-row"><span class="detail-label">Atendimento</span><strong>${contactValue(CONTACT_CONFIG.serviceArea, 'Configure a região de atendimento')}</strong></div><div class="detail-row"><span class="detail-label">Telefone</span><strong>${contactValue(CONTACT_CONFIG.phone, 'Configure seu telefone')}</strong></div>${CONTACT_CONFIG.email ? `<div class="detail-row"><span class="detail-label">E-mail</span><strong>${CONTACT_CONFIG.email}</strong></div>` : ''}<div class="config-note">Os campos acima são editáveis no arquivo <code>src/main.js</code>. Substitua os placeholders pelos dados reais antes de publicar.</div></div></div></section>
       </main>
-      <footer class="site-footer"><div class="section-wrap footer-inner"><a class="brand brand--footer" href="#inicio"><img src="${logo}" alt="JML Serviços Elétricos" /></a><p>Energia que funciona.<br />Tecnologia que acompanha.</p><div class="footer-meta"><span>© ${new Date().getFullYear()} JML Serviços Elétricos</span><a href="#inicio">Voltar ao topo ↑</a></div></div></footer>
+      <footer class="site-footer"><div class="section-wrap footer-inner"><a class="brand brand--footer" href="#inicio"><img src="${logo}" alt="JM Serviços Elétricos" /></a><p>Energia que funciona.<br />Tecnologia que acompanha.</p><div class="footer-meta"><span>© ${new Date().getFullYear()} JM Serviços Elétricos</span><a href="#inicio">Voltar ao topo ↑</a></div></div></footer>
     </div>
   `;
 
